@@ -1,0 +1,92 @@
+* {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.izgled{
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(255, 255, 255);
+}
+h1{
+    color: rgb(59, 58, 58);
+    text-align: left;
+}
+.textbox{
+    font-size: 17px;
+    width: 280px;
+    height: 35px;
+    border-radius: 6px;
+    border: 2px solid black;
+    padding-left: 13px;
+}
+.textbox:focus{
+    outline: none !important;
+    border-color: rgb(235, 152, 152);
+}
+.gumb{
+    font-size: 17px;
+    color: rgb(212, 35, 35);
+    background-color: rgb(247, 217, 217);
+    width: 90px;
+    height: 41px;
+    border-radius: 6px;
+    border: 2px solid rgb(235, 152, 152);
+    margin-left: 20px;
+    font-weight: bold;
+}
+.gumb:hover{
+    transition-duration: 0.5s;
+    cursor:pointer;
+    color: white;
+    background-color: rgb(187, 38, 38);
+    border-color: rgb(187, 38, 38);
+}
+.obrisi{
+    font-size: 17px;
+    text-decoration: underline;
+    color: rgb(230, 45, 45);
+    margin-top: 13px;
+}
+.obrisi:hover{
+    cursor:pointer;
+}
+.naslov{
+    padding-left: 7%;
+    padding-top: 3%;
+}
+.textbox_pozicija{
+    float:left;
+    padding-left: 7%;
+}
+.gumb_pozicija{
+    float:left;
+}
+.text_pozicija{
+    float:right;
+    height: 34px;
+    padding-right: 8%;
+    text-align: center;
+}
+.pozicija_elementi{
+    box-sizing: border-box;
+}
+.elementi{
+    display: grid;
+    grid-template-columns: 45% 45%;
+    grid-auto-rows: minmax(80px, auto);
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+    padding-left: 7%;
+}
+.element{
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    height: 50px;
+    border: 1px solid;
+    border-color: white;
+    box-shadow: -1px 5px 8px #cfcfcf;
+    padding-top: 10px;
+}
