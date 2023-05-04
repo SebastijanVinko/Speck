@@ -1,3 +1,5 @@
+var input = document.getElementById("gumb");
+
 function obrisi_elemente(){ 
   elementi = document.getElementsByClassName("element");
   while(elementi.length > 0){
@@ -14,3 +16,12 @@ function dodaj_element(){
     document.getElementById("unos").value = "";
   }
 }
+
+document.addEventListener('keypress', (event)=>{
+  let keyCode = event.keyCode ? event.keyCode : event.which;
+
+  if(keyCode === 13) {
+    dodaj_element();
+  }
+    
+});

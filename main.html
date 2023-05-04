@@ -1,31 +1,34 @@
 <!DOCTYPE html>
-<html>
+<html lang="hr">
 <head>
+    <title>Speck zadatak</title>
     <link rel="stylesheet" href="stil.css">
     <script src="skripta.js"></script>
+    <meta charset="UTF-8">
 </head>
 <body class="izgled">
-    <div>
-        <h1 class="naslov">My technologies</h1>
-        <br>
-    </div>
-
-    <div class="textbox_pozicija">
-        <input class="textbox" type="text" id="unos" placeholder="Enter new technology...">
-    </div>
-
-    <div class="gumb_pozicija">
-        <button class="gumb" onclick="dodaj_element()">Add</button>
-    </div>
-
-    <div class="text_pozicija">
-        <p class="obrisi" onclick="obrisi_elemente()" id="text_remove">Remove all items</p>
-    </div>
+    <header>
+        <section>
+            <div>
+                <h1 class="naslov">My technologies</h1>
+            </div>
+            <div class="textbox_pozicija">
+                <input class="textbox" type="text" id="unos" placeholder="Enter new technology...">
+            </div>
+            <div class="gumb_pozicija">
+                <button class="gumb" id="gumb" onclick="dodaj_element()">Add</button>
+            </div>
+            <div class="text_pozicija">
+                <p class="obrisi" onclick="obrisi_elemente()" id="text_remove">Remove all items</p>
+            </div>
+        </section>
+    </header>
+    <main>
+        <br><br><br><br>
+        <section class="pozicija_elementi">
+            <div class="elementi" id="DIVelementi"></div>
+        </section>
+    </main>
 </body>
 
-<br><br><br><br><br><br>
-
-<body class="pozicija_elementi">
-    <div class="elementi" id="DIVelementi"></div>
-</body>
 </html>
